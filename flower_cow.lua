@@ -1,4 +1,4 @@
-
+local S = minetest.get_translator(minetest.get_current_modname())
 
 -- Cow by sirrobzeroone, then Krupnov Pavel, then TenPlus1. Flower cow by DrPlamsa
 
@@ -112,7 +112,7 @@ mobs:register_mob("flower_cow:flower_cow", {
 
 			if self.gotten == true then
 				minetest.chat_send_player(name,
-					"Flower cow already milked!")
+					S("Flower cow already milked!"))
 				return
 			end
 
@@ -183,7 +183,7 @@ minetest.register_craft({
 })
 
 
-mobs:register_egg("flower_cow:flower_cow", "Flower cow", "flower_cow_inv.png")
+mobs:register_egg("flower_cow:flower_cow", S("Flower cow"), "flower_cow_inv.png")
 
 
 
